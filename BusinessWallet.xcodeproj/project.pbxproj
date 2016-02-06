@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		423144561C64E4E40014F014 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423144551C64E4E40014F014 /* NewAccountViewController.swift */; };
+		42E6083E1C65D03B001E63C3 /* YourAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6083D1C65D03B001E63C3 /* YourAccountViewController.swift */; };
 		491E09ED1C6283160058317A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E09EC1C6283160058317A /* AppDelegate.swift */; };
 		491E09EF1C6283160058317A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E09EE1C6283160058317A /* FirstViewController.swift */; };
 		491E09F11C6283160058317A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E09F01C6283160058317A /* SecondViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		423144551C64E4E40014F014 /* NewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
+		42E6083D1C65D03B001E63C3 /* YourAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourAccountViewController.swift; sourceTree = "<group>"; };
 		491E09E91C6283160058317A /* BusinessWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491E09EC1C6283160058317A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		491E09EE1C6283160058317A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				491E09EE1C6283160058317A /* FirstViewController.swift */,
 				491E09F01C6283160058317A /* SecondViewController.swift */,
 				423144551C64E4E40014F014 /* NewAccountViewController.swift */,
+				42E6083D1C65D03B001E63C3 /* YourAccountViewController.swift */,
 				491E09F21C6283160058317A /* Main.storyboard */,
 				491E09F51C6283160058317A /* Assets.xcassets */,
 				491E09F71C6283160058317A /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				491E09F11C6283160058317A /* SecondViewController.swift in Sources */,
 				491E09ED1C6283160058317A /* AppDelegate.swift in Sources */,
+				42E6083E1C65D03B001E63C3 /* YourAccountViewController.swift in Sources */,
 				491E09EF1C6283160058317A /* FirstViewController.swift in Sources */,
 				423144561C64E4E40014F014 /* NewAccountViewController.swift in Sources */,
 			);

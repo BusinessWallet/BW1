@@ -10,12 +10,27 @@ import UIKit
 
 class YourAccountViewController: UIViewController {
 
+    
+    //أضفت عنصر الScroll
+    @IBOutlet weak var YourAccountScrollView: UIScrollView!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+         //غيرت طول الscroll view
+        YourAccountScrollView.contentSize.height=1510
     }
 
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -17,6 +17,7 @@
 		491E09F91C6283160058317A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491E09F71C6283160058317A /* LaunchScreen.storyboard */; };
 		491E0A041C6283160058317A /* BusinessWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E0A031C6283160058317A /* BusinessWalletTests.swift */; };
 		491E0A0F1C6283160058317A /* BusinessWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E0A0E1C6283160058317A /* BusinessWalletUITests.swift */; };
+		49262AEA1C69BA7C00F7DC3C /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49262AE91C69BA7C00F7DC3C /* EditAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		491E0A0A1C6283160058317A /* BusinessWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		491E0A0E1C6283160058317A /* BusinessWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessWalletUITests.swift; sourceTree = "<group>"; };
 		491E0A101C6283160058317A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49262AE91C69BA7C00F7DC3C /* EditAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				491E09F01C6283160058317A /* SecondViewController.swift */,
 				423144551C64E4E40014F014 /* NewAccountViewController.swift */,
 				42E6083D1C65D03B001E63C3 /* YourAccountViewController.swift */,
+				49262AE91C69BA7C00F7DC3C /* EditAccountViewController.swift */,
 				491E09F21C6283160058317A /* Main.storyboard */,
 				491E09F51C6283160058317A /* Assets.xcassets */,
 				491E09F71C6283160058317A /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49262AEA1C69BA7C00F7DC3C /* EditAccountViewController.swift in Sources */,
 				491E09F11C6283160058317A /* SecondViewController.swift in Sources */,
 				491E09ED1C6283160058317A /* AppDelegate.swift in Sources */,
 				42E6083E1C65D03B001E63C3 /* YourAccountViewController.swift in Sources */,

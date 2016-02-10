@@ -58,7 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The aim of this application is to both help small project owners to present their products or services and to help customers to find them easily and quickly.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -152,6 +152,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 <state key="normal" title="Forgot password?"/>
                                 <connections>
+                                    <action selector="ForgetPasswordButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="klM-dX-btW"/>
                                     <segue destination="loH-L3-SEd" kind="push" id="r31-Hg-wKZ"/>
                                 </connections>
                             </button>
@@ -161,6 +162,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Sign In "/>
                                 <connections>
+                                    <action selector="SignInButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="IVX-EQ-lna"/>
                                     <segue destination="DOD-IN-hZg" kind="push" id="aJg-94-Xo9"/>
                                 </connections>
                             </button>
@@ -168,6 +170,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Account" id="seT-M6-5Dh"/>
+                    <connections>
+                        <outlet property="EmailTextField" destination="Lho-Ij-8hG" id="qpZ-hb-q7G"/>
+                        <outlet property="PasswordTextField" destination="NaR-FY-Ti3" id="xjO-OP-MXF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -1581,6 +1587,6 @@
         <image name="student server" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cmp-d2-tzS"/>
+        <segue reference="aJg-94-Xo9"/>
     </inferredMetricsTieBreakers>
 </document>

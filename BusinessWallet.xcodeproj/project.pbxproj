@@ -18,6 +18,14 @@
 		491E0A041C6283160058317A /* BusinessWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E0A031C6283160058317A /* BusinessWalletTests.swift */; };
 		491E0A0F1C6283160058317A /* BusinessWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E0A0E1C6283160058317A /* BusinessWalletUITests.swift */; };
 		49262AEA1C69BA7C00F7DC3C /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49262AE91C69BA7C00F7DC3C /* EditAccountViewController.swift */; };
+		AA731CBE1C72717800A121C7 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA731CBD1C72717800A121C7 /* CategoriesView.swift */; };
+		AA731CC01C72784000A121C7 /* CheefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA731CBF1C72784000A121C7 /* CheefsView.swift */; };
+		AA731CC21C72791600A121C7 /* ArtAndDesigneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA731CC11C72791600A121C7 /* ArtAndDesigneView.swift */; };
+		AA731CC41C72793400A121C7 /* OthersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA731CC31C72793400A121C7 /* OthersView.swift */; };
+		AA731CC61C72795400A121C7 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA731CC51C72795400A121C7 /* StoreView.swift */; };
+		AA731CC81C72797E00A121C7 /* BeautyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA731CC71C72797E00A121C7 /* BeautyView.swift */; };
+		AA731CCA1C7279B600A121C7 /* StudentServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA731CC91C7279B600A121C7 /* StudentServicesView.swift */; };
+		AA731CD01C72863500A121C7 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA731CCF1C72863500A121C7 /* BusinessCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,14 @@
 		491E0A0E1C6283160058317A /* BusinessWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessWalletUITests.swift; sourceTree = "<group>"; };
 		491E0A101C6283160058317A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49262AE91C69BA7C00F7DC3C /* EditAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
+		AA731CBD1C72717800A121C7 /* CategoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		AA731CBF1C72784000A121C7 /* CheefsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheefsView.swift; sourceTree = "<group>"; };
+		AA731CC11C72791600A121C7 /* ArtAndDesigneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtAndDesigneView.swift; sourceTree = "<group>"; };
+		AA731CC31C72793400A121C7 /* OthersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersView.swift; sourceTree = "<group>"; };
+		AA731CC51C72795400A121C7 /* StoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		AA731CC71C72797E00A121C7 /* BeautyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyView.swift; sourceTree = "<group>"; };
+		AA731CC91C7279B600A121C7 /* StudentServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentServicesView.swift; sourceTree = "<group>"; };
+		AA731CCF1C72863500A121C7 /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +127,17 @@
 				423144551C64E4E40014F014 /* NewAccountViewController.swift */,
 				42E6083D1C65D03B001E63C3 /* YourAccountViewController.swift */,
 				49262AE91C69BA7C00F7DC3C /* EditAccountViewController.swift */,
+				AA731CC91C7279B600A121C7 /* StudentServicesView.swift */,
+				AA731CC71C72797E00A121C7 /* BeautyView.swift */,
+				AA731CC51C72795400A121C7 /* StoreView.swift */,
+				AA731CC31C72793400A121C7 /* OthersView.swift */,
+				AA731CC11C72791600A121C7 /* ArtAndDesigneView.swift */,
+				AA731CBF1C72784000A121C7 /* CheefsView.swift */,
+				AA731CBD1C72717800A121C7 /* CategoriesView.swift */,
 				491E09F21C6283160058317A /* Main.storyboard */,
-				491E09F51C6283160058317A /* Assets.xcassets */,
+				AA731CCF1C72863500A121C7 /* BusinessCell.swift */,
 				491E09F71C6283160058317A /* LaunchScreen.storyboard */,
+				491E09F51C6283160058317A /* Assets.xcassets */,
 				491E09FA1C6283160058317A /* Info.plist */,
 			);
 			path = BusinessWallet;
@@ -269,9 +293,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				49262AEA1C69BA7C00F7DC3C /* EditAccountViewController.swift in Sources */,
+				AA731CC41C72793400A121C7 /* OthersView.swift in Sources */,
+				AA731CC61C72795400A121C7 /* StoreView.swift in Sources */,
+				AA731CBE1C72717800A121C7 /* CategoriesView.swift in Sources */,
 				491E09F11C6283160058317A /* SecondViewController.swift in Sources */,
 				491E09ED1C6283160058317A /* AppDelegate.swift in Sources */,
+				AA731CC21C72791600A121C7 /* ArtAndDesigneView.swift in Sources */,
+				AA731CD01C72863500A121C7 /* BusinessCell.swift in Sources */,
+				AA731CC01C72784000A121C7 /* CheefsView.swift in Sources */,
+				AA731CC81C72797E00A121C7 /* BeautyView.swift in Sources */,
 				42E6083E1C65D03B001E63C3 /* YourAccountViewController.swift in Sources */,
+				AA731CCA1C7279B600A121C7 /* StudentServicesView.swift in Sources */,
 				491E09EF1C6283160058317A /* FirstViewController.swift in Sources */,
 				423144561C64E4E40014F014 /* NewAccountViewController.swift in Sources */,
 			);

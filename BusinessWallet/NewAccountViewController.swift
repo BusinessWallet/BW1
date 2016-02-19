@@ -7,21 +7,57 @@
 //
 
 import UIKit
-
+//عملت import للFirebase
+import Firebase
 
 //أضفت كلاسين UIPickerViewDelegate, UIPickerViewDataSource عشان الpicker view للتصنيفات
 class NewAccountViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+   
     
     
-    //أضفت عنصر ال scroll
-    @IBOutlet weak var NewAccountScrollView: UIScrollView!
+    //رابط قاعدة البيانات حقتنا
+    var ref = Firebase(url:"https://businesswallet.firebaseio.com/")
+    
+    
+    
+    @IBOutlet weak var NewAccountScrollView: UIScrollView!   //أضفت عنصر ال scroll
+    @IBOutlet weak var CategoryPicker: UIPickerView! //أضفت عنصر الPicker للتصنيفات
+    var CategoryArray:[String]=["Cheefs","Beauty","Student Services","Art & Designe","Store", "Others"]  //مصفوفة التصنيفات عشان Picker
 
-    //أضفت عنصر الPicker للتصنيفات
-    @IBOutlet weak var CategoryPicker: UIPickerView!
     
     
-    //مصفوفة التصنيفات عشان Picker
-    var CategoryArray:[String]=["Cheefs","Beauty","Student Services","Art & Designe","Store", "Others"]
+    
+    @IBOutlet weak var EmailTextField: UITextField!  //أضفت الEmailTextField  من الواجهة
+    @IBOutlet weak var PasswordTextField: UITextField!    //أضفت الPasswordTextField  من الواجهة
+    @IBOutlet weak var RePasswordTextField: UITextField!     //أضفت الRe-PasswordTextField  من الواجهة
+   
+    
+    
+    
+
+    //أضفت ال Create Button من الواجهة
+    @IBAction func Create(sender: AnyObject) {
+    
+        //
+        if EmailTextField.text == "" || PasswordTextField.text == ""{
+            print("make sure to enter in each textfield")
+        } else {
+     
+//دالة إنشاء حساب
+      ref.createUser(EmailTextField.text, password: PasswordTextField.text, withCompletionBlock: { (ErrorType) -> Void in
+        if ErrorType != nil {
+        let myError = ErrorType
+            print(myError)
+        } else {
+     
+            print("sucess Sign Up")   }  })
+        }
+    }
+  
+    
+    
+    
+    
     
     
     
@@ -29,8 +65,6 @@ class NewAccountViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
         //غيرت طول الscroll view
 NewAccountScrollView.contentSize.height=1320
         
@@ -38,7 +72,8 @@ NewAccountScrollView.contentSize.height=1320
   //عشان تشغيل ال picker
     CategoryPicker.delegate=self
     CategoryPicker.dataSource=self
-}
+
+    }
 
     
     

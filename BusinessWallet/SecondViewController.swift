@@ -7,9 +7,16 @@
 //
 
 import UIKit
+//عملت import للFirebase
+import Firebase
 
 class SecondViewController: UIViewController {
 
+    
+    //رابط قاعدة البيانات حقتنا
+var ref = Firebase(url:"https://businesswallet.firebaseio.com/")
+    
+    
     
     // أضفت العناصر عشان أستخدمهم في إخفار لوحة المفاتيح في الدوال اللي تحتهم
     @IBOutlet weak var EmailTextField: UITextField!
@@ -22,16 +29,37 @@ class SecondViewController: UIViewController {
         self.PasswordTextField.resignFirstResponder()
     }
     
+    
+    
+    
     @IBAction func SignInButton(sender: AnyObject) {
         self.EmailTextField.resignFirstResponder()
         self.PasswordTextField.resignFirstResponder()
-    }
+   
+        
+    //دوال لتحقق من أن الدخول صحيح
+        if EmailTextField.text == "" || PasswordTextField.text == "" {
+        print("Make Sure to Fill in all textfields")
+        }else {
+        ref.authUser(EmailTextField.text, password: PasswordTextField.text, withCompletionBlock: { (ErrorType, authData) -> Void in
+            if ErrorType != nil {
+            print(ErrorType)
+            print("There's an error with the given information")
+            } else {
+            print("login sucess") }  })
+        }         }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        
+        
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

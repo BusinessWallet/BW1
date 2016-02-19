@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		423144561C64E4E40014F014 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423144551C64E4E40014F014 /* NewAccountViewController.swift */; };
+		426F3D481C770113008CD593 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F3D471C770113008CD593 /* Firebase.framework */; };
+		426F3D4A1C770122008CD593 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F3D491C770122008CD593 /* SystemConfiguration.framework */; };
+		426F3D4C1C770127008CD593 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F3D4B1C770127008CD593 /* CFNetwork.framework */; };
+		426F3D4E1C770131008CD593 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F3D4D1C770131008CD593 /* Security.framework */; };
+		426F3D501C770137008CD593 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F3D4F1C770137008CD593 /* libc++.tbd */; };
+		426F3D521C770142008CD593 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F3D511C770142008CD593 /* libicucore.tbd */; };
 		42E6083E1C65D03B001E63C3 /* YourAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6083D1C65D03B001E63C3 /* YourAccountViewController.swift */; };
 		491E09ED1C6283160058317A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E09EC1C6283160058317A /* AppDelegate.swift */; };
 		491E09EF1C6283160058317A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E09EE1C6283160058317A /* FirstViewController.swift */; };
@@ -47,6 +53,12 @@
 
 /* Begin PBXFileReference section */
 		423144551C64E4E40014F014 /* NewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
+		426F3D471C770113008CD593 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		426F3D491C770122008CD593 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		426F3D4B1C770127008CD593 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		426F3D4D1C770131008CD593 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		426F3D4F1C770137008CD593 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		426F3D511C770142008CD593 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		42E6083D1C65D03B001E63C3 /* YourAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourAccountViewController.swift; sourceTree = "<group>"; };
 		491E09E91C6283160058317A /* BusinessWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491E09EC1C6283160058317A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +90,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426F3D521C770142008CD593 /* libicucore.tbd in Frameworks */,
+				426F3D501C770137008CD593 /* libc++.tbd in Frameworks */,
+				426F3D4E1C770131008CD593 /* Security.framework in Frameworks */,
+				426F3D4C1C770127008CD593 /* CFNetwork.framework in Frameworks */,
+				426F3D4A1C770122008CD593 /* SystemConfiguration.framework in Frameworks */,
+				426F3D481C770113008CD593 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +119,11 @@
 		491E09E01C6283160058317A = {
 			isa = PBXGroup;
 			children = (
+				426F3D511C770142008CD593 /* libicucore.tbd */,
+				426F3D4F1C770137008CD593 /* libc++.tbd */,
+				426F3D4D1C770131008CD593 /* Security.framework */,
+				426F3D4B1C770127008CD593 /* CFNetwork.framework */,
+				426F3D491C770122008CD593 /* SystemConfiguration.framework */,
 				491E09EB1C6283160058317A /* BusinessWallet */,
 				491E0A021C6283160058317A /* BusinessWalletTests */,
 				491E0A0D1C6283160058317A /* BusinessWalletUITests */,
@@ -139,6 +162,7 @@
 				491E09F71C6283160058317A /* LaunchScreen.storyboard */,
 				491E09F51C6283160058317A /* Assets.xcassets */,
 				491E09FA1C6283160058317A /* Info.plist */,
+				426F3D471C770113008CD593 /* Firebase.framework */,
 			);
 			path = BusinessWallet;
 			sourceTree = "<group>";
@@ -445,9 +469,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BusinessWallet",
+				);
 				INFOPLIST_FILE = BusinessWallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = sa.com.BusinessWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -457,9 +486,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BusinessWallet",
+				);
 				INFOPLIST_FILE = BusinessWallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = sa.com.BusinessWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

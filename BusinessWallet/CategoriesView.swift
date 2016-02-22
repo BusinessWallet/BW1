@@ -9,45 +9,35 @@
 import UIKit
 
 class CategoriesView: UITableViewController {
-
-    @IBOutlet weak var OthersCell: UITableViewCell!
-    @IBOutlet weak var StoreCell: UITableViewCell!
-    @IBOutlet weak var ArtAndDesigneCell: UITableViewCell!
-    @IBOutlet weak var StudentServicesCell: UITableViewCell!
-    @IBOutlet weak var BeautyCell: UITableViewCell!
-    @IBOutlet weak var CheefsCell: UITableViewCell!
+    
+        @IBOutlet weak var OthersCell: UITableViewCell!
+        @IBOutlet weak var StoreCell: UITableViewCell!
+        @IBOutlet weak var ArtAndDesigneCell: UITableViewCell!
+        @IBOutlet weak var StudentServicesCell: UITableViewCell!
+        @IBOutlet weak var BeautyCell: UITableViewCell!
+        @IBOutlet weak var CheefsCell: UITableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    // محاولة ربط  فاشله 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier=="CheefsCelll") {let _=segue.destinationViewController as! CheefsView}
-    else  if (segue.identifier=="BeautyCell") {let _=segue.destinationViewController as! BeautyView}
-    else if (segue.identifier=="StudentServicesCell") {let _=segue.destinationViewController as! StudentServicesView}
-    else  if (segue.identifier=="ArtAndDesigneCell") {let _=segue.destinationViewController as! ArtAndDesigneView}
-    else  if (segue.identifier=="StoreCell") {let _=segue.destinationViewController as! StoreView}
-    else  if (segue.identifier=="OthersCell") {let _=segue.destinationViewController as! OthersView}
-        
-    }
+
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,10 +48,11 @@ class CategoriesView: UITableViewController {
     
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
+        
         cell.accessoryType=UITableViewCellAccessoryType.DisclosureIndicator
-
+      
         return cell
 
     }
@@ -101,14 +92,19 @@ class CategoriesView: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            if (segue.identifier=="CheefsCelll") {let _=segue.destinationViewController as! CheefsView}
+            else  if (segue.identifier=="BeautyCell") {let _=segue.destinationViewController as! BeautyView}
+            else if (segue.identifier=="StudentServicesCell") {let _=segue.destinationViewController as! StudentServicesView}
+            else  if (segue.identifier=="ArtAndDesigneCell") {let _=segue.destinationViewController as! ArtAndDesigneView}
+            else  if (segue.identifier=="StoreCell") {let _=segue.destinationViewController as! StoreView}
+            else  if (segue.identifier=="OthersCell") {let _=segue.destinationViewController as! OthersView}
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }

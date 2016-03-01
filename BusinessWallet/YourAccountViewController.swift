@@ -7,9 +7,14 @@
 //
 
 import UIKit
-
+import Firebase
 class YourAccountViewController: UIViewController {
 
+     //رابط قاعدة البيانات حقتنا
+var ref = Firebase(url:"https://businesswallet.firebaseio.com/")
+
+    
+    
     
     //أضفت عنصر الScroll
     @IBOutlet weak var YourAccountScrollView: UIScrollView!
@@ -37,6 +42,10 @@ class YourAccountViewController: UIViewController {
     }
     
 
+    //logOut Button
+    @IBAction func LogOut(sender: AnyObject) {
+ 
+    }
     /*
     // MARK: - Navigation
 

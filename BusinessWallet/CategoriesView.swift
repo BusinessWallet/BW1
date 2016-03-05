@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CategoriesView: UITableViewController {
 
@@ -18,11 +19,10 @@ class CategoriesView: UITableViewController {
     @IBOutlet weak var StoreCell : UITableViewCell?
     @IBOutlet weak var OthersCell : UITableViewCell?
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to preserve selection between presentations
      
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -48,22 +48,15 @@ class CategoriesView: UITableViewController {
         
     }
     
-// عرفت الخلايا و الفهرسه الي فيها 
+    // عرفت الخلايا و الفهرسه الي فيها
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->  UITableViewCell {
-        var identifier : String
-        switch indexPath.row {
-        case 0: identifier = "CheefsCell"
-        case 1: identifier = "BeautyCell"
-        case 2: identifier = "StudentServicesCell"
-        case 3: identifier = "ArtAndDesigneCell"
-        case 4: identifier = "StoreCell"
-        default:  identifier = "OthersCell"
-        }
-        let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath)
+let cell = tableView.dequeueReusableCellWithIdentifier("CCell", forIndexPath: indexPath)
         cell.accessoryType = .DisclosureIndicator
+        // configure your cell here
+        
         return cell
     }
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -112,7 +105,4 @@ class CategoriesView: UITableViewController {
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-
-}
-
+        } }

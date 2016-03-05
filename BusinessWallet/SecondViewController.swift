@@ -32,40 +32,18 @@ var ref = Firebase(url:"https://businesswallet.firebaseio.com/")
     
     
     
-    @IBAction func SignInButton(sender: AnyObject) {
-        self.EmailTextField.resignFirstResponder()
-        self.PasswordTextField.resignFirstResponder()
-   
-        
-    //دوال لتحقق من أن الدخول صحيح
-        if EmailTextField.text == "" || PasswordTextField.text == "" {
-        print("Make Sure to Fill in all textfields")
-        }else {
-        ref.authUser(EmailTextField.text, password: PasswordTextField.text, withCompletionBlock: { (ErrorType, authData) -> Void in
-            if ErrorType != nil {
-            print(ErrorType)
-            print("There's an error with the given information")
-            } else {
-            print("login sucess") }  })
-        }         }
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        
-        
-        
-        
-        
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+ 
 
     
     // دالة أضفتها عشان تختفي لوحة المفاتيح لما نلمس أي مكان على الشاشة
@@ -75,5 +53,11 @@ var ref = Firebase(url:"https://businesswallet.firebaseio.com/")
     
     
     
+    //Sign In Button
+    @IBAction func SignInButton(sender: AnyObject) {
+
+    
+
 }
 
+}

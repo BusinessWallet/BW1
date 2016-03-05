@@ -35,34 +35,8 @@ class NewAccountViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
 
-    //أضفت ال Create Button من الواجهة
-    @IBAction func Create(sender: AnyObject) {
     
-        //
-        if EmailTextField.text == "" || PasswordTextField.text == ""{
-            print("make sure to enter in each textfield")
-        } else {
-     
-//دالة إنشاء حساب
-      ref.createUser(EmailTextField.text, password: PasswordTextField.text, withCompletionBlock: { (ErrorType) -> Void in
-        if ErrorType != nil {
-        let myError = ErrorType
-            print(myError)
-        } else {
-     
-            print("sucess Sign Up")   }  })
-        }
-    }
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //غيرت طول الscroll view
@@ -108,6 +82,26 @@ NewAccountScrollView.contentSize.height=1320
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
     return 1
     }
-
     
+    
+    //Create Button من الواجهة
+    @IBAction func Create(sender: AnyObject) {
+        
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
